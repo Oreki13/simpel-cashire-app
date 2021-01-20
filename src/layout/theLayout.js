@@ -7,6 +7,7 @@ import Sidebar from "./sidebar";
 const useStyles = makeStyles((theme) => ({
   content: {
     marginTop: 64,
+    marginBottom: 40,
     flexGrow: 1,
   },
 }));

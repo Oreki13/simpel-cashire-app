@@ -1,4 +1,4 @@
-import { Container } from "@material-ui/core";
+import { Box, Container, Typography } from "@material-ui/core";
 import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
 import TableComponentHistory from "../component/tableHistory";
@@ -113,8 +113,11 @@ export default function Dashboard() {
 
   return (
     <Container maxWidth="md">
-      <h1 style={{ textAlign: "center" }}>History Transaction</h1>
-
+      <Box marginY={2}>
+        <Typography align="center" variant="h3" component="h3">
+          History Transaction
+        </Typography>
+      </Box>
       <TableComponentHistory
         isLoading={isLoading}
         colData={colData}
